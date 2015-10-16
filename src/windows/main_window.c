@@ -12,14 +12,14 @@ static void layer_update_proc(Layer *layer, GContext *ctx) {
   // Create time TextLayer
   s_time_layer = text_layer_create(text_frame);
   text_layer_set_background_color(s_time_layer, GColorClear);
-  text_layer_set_text_color(s_time_layer, GColorWhite);
+  text_layer_set_text_color(s_time_layer, GColorBlack);
   text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_BITHAM_42_BOLD));
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
   layer_add_child(layer, text_layer_get_layer(s_time_layer));
 
   // Yellow circle
   GRect frame = grect_inset(bounds, GEdgeInsets(30));
-  graphics_context_set_fill_color(ctx, GColorBlack);
+  graphics_context_set_fill_color(ctx, GColorOrange);
   graphics_fill_radial(ctx, frame, GOvalScaleModeFitCircle, 30, 
                        DEG_TO_TRIGANGLE(0), DEG_TO_TRIGANGLE(360));
 }
