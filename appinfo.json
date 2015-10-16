@@ -1,0 +1,18 @@
+{
+  "uuid": "0bffaf2e-bce8-43a9-9587-32446565ce5e",
+  "shortName": "watchface",
+  "longName": "watchface",
+  "companyName": "Chase Sillevis",
+  "versionLabel": "1.0",
+  "sdkVersion": "3",
+  "targetPlatforms": ["basalt", "chalk"],
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": []
+  }
+}
